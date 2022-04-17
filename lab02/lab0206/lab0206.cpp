@@ -13,7 +13,7 @@ int main()
 	cin >> n;
 	for ( i = 1; i <= n; i++)
 	{
-		x = (sin(1) * sin(1 + 2) * sin(1 + 2 + n));
+		x = (sin(1) * sin(1 + 2) * sin(1 + 2 + i));
 	}
 	cout << x;
 }
