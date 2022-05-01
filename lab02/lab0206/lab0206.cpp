@@ -7,15 +7,15 @@ using namespace std;
 int main()
 {
 	setlocale(LC_CTYPE, "ukr");
-	double x = 0;
 	int i, n;
+	float sum = 1;
 	cout << "Введiть n\n";
 	cin >> n;
-	for ( i = 1; i <= n; i++)
+	for (i = 1; i <= n; i++)
 	{
-		x = (sin(1) * sin(1 + 2) * sin(1 + 2 + i));
+		sum = sum * sin(i + n);
 	}
-	cout << x;
+	cout << sum;
 }
 
 
