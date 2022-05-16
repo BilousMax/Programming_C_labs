@@ -15,8 +15,8 @@ int main()
     cout << "Кiлькiсть стовпцiв = ";
     cin >> n;
     srand((unsigned)time(NULL));
-    for (i = 0; i < 25; i++) {
-        for (j = 0; j < 25; j++) {
+    for (i = 0; i < m; i++) {
+        for (j = 0; j < n; j++) {
             a[i][j] = 300 * rand() / RAND_MAX;
         }
 
