@@ -9,24 +9,27 @@ int main()
     srand((unsigned)time(NULL));
     for (int i = 1; i < 100; i++)
     {
-        a[i] = 100. - ((double)rand() / RAND_MAX) * 200.;
+        a[i] = 100 * rand() / RAND_MAX;
         max = a[0];
     }
-    
+
     for (i = 0; i < 100; i++)
     {
         max = a[i];
     }
-    cout << max<<"\n"; 
+    cout << "MAX=";
+    cout << max << "\n";
     for (i = 0; i < 100; i++)
     {
         if (a[i] != max)
-            b[i] = 0;
+            b[i] = a[i] = 0;
         else
-            b[i] = 1;
+            b[i] = a[i] = 1;
+        cout << b[i];
     }
-    cout<<b[i]; // не можу зрозуміти чому виводиться число -858993460
     
+    
+
 }
 
 
